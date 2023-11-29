@@ -1,0 +1,15 @@
+button{
+	width: 200px;
+	height: 50px;
+	border-radius: 7px;
+	font-size: 30px;
+}
+.top{
+	background-color: darkgreen;
+}
+.center{
+	background-color: blue;
+}
+.button{
+	background-color: darkviolet;
+}
