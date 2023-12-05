@@ -1,8 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,900&display=swap');
-
-button{
-	background-color: red;
-	border: none;
-	height: 50px;
-	width: 100px;
+*{
+	box-sizing: border-box;
 }
+
+div{
+	width: 50%;
+	height: 50vh;
+	background-color: red;
+	box-shadow: 5px 5px 15px darkblue,
+	 -5px -5px 15px green;
+}
+body{
+	padding: 5px;
+}
+h1{
+	color: #ffff00;
+
+}
+hex ranglari <#fff-> oq, #000 -> qora, #f00 -> qizil, #0f0 -> yashil, #00f -> kok.>
+
+rgb () & rgba () ;
+red, green, blue;
+rgb(0,0,0) ; // 0%
+rgb(255,255,255) ; // 100%
+rgba(255,0,0,0.5); // red 50%
+rgb alpha -> 0 = 0%, 1.0 = 100%, 0,5 = 50%

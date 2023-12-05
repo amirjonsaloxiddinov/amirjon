@@ -1,0 +1,56 @@
+/*
+   CSS o'zgaruvcilar 2 turga bo'linadi
+   1-global o'zgaruvcilar
+   2-local o'zgaruvchilar
+
+   Global o'zgaruvcilar - fayl icidagi barcha selecterlar 
+   uchun ishlatiladi
+  LOcal o'zgaruvchilar - berilgan selector ichida ishlatiladi,
+  boshqa - selectorlarda ishlamaydi
+
+  lobal o'zgaruvcilar yaratish
+  :root {
+		--gvar1NAME: value;
+		--gvar2NAME: value;
+  }
+
+  Local o'agaruvchilar  yaratish
+  selector{
+	--Lvar1NAME:value1;
+	--Lvar2NAME:value2;
+  }
+
+   o'zgaruvchilarni ishlatish ucun var(--varName)
+   selector {
+      property: var (--varName)
+      xususiyat-nomi:qiymati:
+   }
+*/
+:root {
+    --qizil:blue;
+    --yashil:green;
+    --matnSoya:2px 2px 10px var(--yashil)  ;
+}
+
+.var-1 {
+   color: var(--qizil);
+   text-shadow: var(--matnSoya);
+   font: 500 25px/1.2em "Magneto", sans-serif;
+}
+.var-2 {
+   color: var(--qizil);
+}
+.var-3 {
+   color: var(--qizil);
+}
+.var-4 {
+   color: var(--qizil);
+}
+.var-5 {
+   --yashil:red;
+   color: var(--yashil);
+}
+
+.var-1, .var-5, .var-2, .var-3, .var-4{
+   color: var(--yashil);
+}
